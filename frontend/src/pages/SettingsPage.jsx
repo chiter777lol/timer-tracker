@@ -35,7 +35,7 @@ const SettingsPage = () => {
           <div style={{ marginTop: '1rem' }}>
             <label style={{ display: 'block', fontSize: '0.875rem', marginBottom: '0.5rem', fontWeight: 500 }}>Тема оформления</label>
             <div className={styles.themeSelect}>
-              <div className{`${styles.themeOption} ${styles.themeLight} ${formData.theme === 'light' ? styles.active : ''}`} onClick={() => setFormData({ ...formData, theme: 'light' })}>Светлая</div>
+              <div className={`${styles.themeOption} ${styles.themeLight} ${formData.theme === 'light' ? styles.active : ''}`} onClick={() => setFormData({ ...formData, theme: 'light' })}>Светлая</div>
               <div className={`${styles.themeOption} ${styles.themeDark} ${formData.theme === 'dark' ? styles.active : ''}`} onClick={() => setFormData({ ...formData, theme: 'dark' })}>Темная</div>
             </div>
           </div>

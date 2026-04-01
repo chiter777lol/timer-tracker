@@ -27,7 +27,7 @@ const Layout = () => {
             <div className={styles.userMenu}>
               {isAuthenticated ? (
                 <>
-                  <span style={{ color: '#475569' }}>í±¤ {user?.name}</span>
+                  <span style={{ color: '#475569' }}>{user?.name}</span>
                   <button onClick={handleLogout} className={styles.logoutBtn}>Ð’Ñ‹Ð¹Ñ‚Ð¸</button>
                 </>
               ) : (
