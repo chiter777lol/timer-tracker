@@ -1,0 +1,12 @@
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+.projectCard { background: white; border-radius: 1rem; padding: 1.25rem; border-left: 4px solid; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.projectCard:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.projectName { font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem; color: #0f172a; }
+.projectDesc { font-size: 0.875rem; color: #64748b; margin-bottom: 1rem; line-height: 1.4; }
+.projectActions { display: flex; gap: 0.75rem; justify-content: flex-end; margin-top: 1rem; }
+.editBtn { color: #6366f1; cursor: pointer; font-size: 0.875rem; font-weight: 500; }
+.editBtn:hover { color: #4f46e5; }
+.deleteBtn { color: #ef4444; cursor: pointer; font-size: 0.875rem; font-weight: 500; }
+.deleteBtn:hover { color: #dc2626; }
+.empty { text-align: center; padding: 3rem; color: #94a3b8; background: white; border-radius: 1rem; }
+.addBtn { background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem; font-weight: 500; font-size: 0.875rem; margin-bottom: 1rem; display: inline-block; }

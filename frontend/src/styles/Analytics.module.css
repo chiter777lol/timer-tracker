@@ -1,0 +1,13 @@
+.filters { background: white; border-radius: 1rem; padding: 1rem; margin-bottom: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-end; }
+.filterGroup { flex: 1; min-width: 150px; }
+.filterLabel { display: block; font-size: 0.75rem; font-weight: 500; color: #64748b; margin-bottom: 0.25rem; }
+.statsGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+.statCard { background: white; border-radius: 1rem; padding: 1rem; text-align: center; }
+.statValue { font-size: 2rem; font-weight: 700; color: #6366f1; }
+.statLabel { font-size: 0.75rem; color: #64748b; margin-top: 0.25rem; }
+.chartContainer { background: white; border-radius: 1rem; padding: 1rem; margin-bottom: 1.5rem; }
+.chartTitle { font-size: 1rem; font-weight: 600; margin-bottom: 1rem; color: #0f172a; }
+.pagination { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem; }
+.pageBtn { padding: 0.5rem 0.75rem; border-radius: 0.5rem; background: white; border: 1px solid #e2e8f0; cursor: pointer; }
+.pageBtn:hover { background: #f1f5f9; }
+.activePage { background: #6366f1; color: white; border-color: #6366f1; }
