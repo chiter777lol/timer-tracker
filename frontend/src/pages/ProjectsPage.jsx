@@ -37,7 +37,7 @@ const ProjectsPage = () => {
   }
 
   const handleDelete = async (id) => {
-    if (confirm('Удалить проект? Все связанные сессии будут удалены')) {
+    if (confirm('Удалить проект?')) {
       await projectApi.delete(id)
       queryClient.invalidateQueries(['projects'])
       toast.success('Проект удален')

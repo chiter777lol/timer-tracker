@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { projectApi, sessionApi } from '../api'
 import Timer from '../components/Timer'
@@ -17,12 +17,6 @@ const HomePage = () => {
   const { data: projects = [] } = useQuery({
     queryKey: ['projects'],
     queryFn: () => projectApi.getAll().then(res => res.data)
-  })
-
-  const { data: activeSession } = useQuery({
-    queryKey: ['activeSession'],
-    queryFn: () => sessionApi.getActive().then(res => res.data),
-    refetchInterval: 5000
   })
 
   const handleSubmit = async () => {
@@ -57,7 +51,7 @@ const HomePage = () => {
         {projects.length === 0 ? (
           <p style={{ textAlign: 'center', color: '#94a3b8', padding: '2rem' }}>Нет проектов. Создайте первый!</p>
         ) : (
-          <div className={styles.grid} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
             {projects.map(p => (
               <div key={p._id} className={styles.card} style={{ padding: '1rem', borderLeft: `4px solid ${p.color || '#6366f1'}` }}>
                 <h3 style={{ fontWeight: 600, marginBottom: '0.5rem' }}>{p.name}</h3>

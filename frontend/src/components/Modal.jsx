@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import styles from '../styles/Modal.module.css'
 import Button from './Button'
+
 const Modal = ({ isOpen, onClose, title, children }) => {
   useEffect(() => {
     const handleEsc = (e) => { if (e.key === 'Escape') onClose() }

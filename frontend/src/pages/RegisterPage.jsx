@@ -35,7 +35,7 @@ const RegisterPage = () => {
   return (
     <div style={{ maxWidth: '400px', margin: '0 auto', paddingTop: '4rem' }}>
       <div style={{ background: 'white', borderRadius: '1rem', padding: '2rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
-        <h1 style={{ fontSize: '1.5rem', fontWeight: '600', textAlign: 'center', marginBottom: '1.5rem', color: '#0f172a' }}>Регистрация</h1>
+        <h1 style={{ fontSize: '1.5rem', fontWeight: '600', textAlign 'center', marginBottom: '1.5rem', color: '#0f172a' }}>Регистрация</h1>
         <form onSubmit={handleSubmit}>
           <Input label="Имя" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
           <Input label="Email" type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required />

@@ -1,4 +1,5 @@
 import styles from '../styles/Input.module.css'
+
 const Input = ({ label, type = 'text', value, onChange, placeholder, required = false, textarea = false }) => {
   const Component = textarea ? 'textarea' : 'input'
   return (

@@ -1,4 +1,5 @@
 import styles from '../styles/Button.module.css'
+
 const Button = ({ children, variant = 'primary', size = 'medium', onClick, type = 'button', disabled = false }) => {
   const sizeClass = size === 'small' ? styles.small : size === 'large' ? styles.large : ''
   return (

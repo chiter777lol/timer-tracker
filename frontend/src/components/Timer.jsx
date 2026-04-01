@@ -64,7 +64,7 @@ const Timer = ({ projects, onSessionUpdate }) => {
           </select>
           <Input textarea value={note} onChange={(e) => setNote(e.target.value)} placeholder="Заметка (необязательно)" />
           <div className={styles.controls}>
-            <Button onClick={handleStart} disabled={loading || !selectedProject}>{loading ? '...' : '▶ Начать'}</Button>
+            <Button onClick={handleStart} disabled={loading || !selectedProject}>{loading ? '...' : 'Начать'}</Button>
           </div>
         </>
       ) : (
@@ -74,7 +74,7 @@ const Timer = ({ projects, onSessionUpdate }) => {
             {activeSession?.note && <div style={{ marginTop: '0.5rem', fontSize: '0.75rem' }}>{activeSession.note}</div>}
           </div>
           <div className={styles.controls}>
-            <Button variant="danger" onClick={handleStop} disabled={loading}>{loading ? '...' : '⏹ Стоп'}</Button>
+            <Button variant="danger" onClick={handleStop} disabled={loading}>{loading ? '...' : 'Стоп'}</Button>
           </div>
         </>
       )}
